@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <title>Document</title>
+    <script src="./assets/scripts/database.min.js" defer></script>
+    <script src="./assets/scripts/app.js" defer></script>
+  </head>
+  <noscript>Ta strona do działania potrzebuje JavaScript</noscript>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          Convertify
+        </h1>
+        <ul class="topMenu">
+          <li id="length">
+            Długość
+          </li>
+          <li id="temperature">
+            Temperatura
+          </li>
+          <li id="weight">
+            Waga
+          </li>
+          <li id="speed">
+            Szybkość
+          </li>
+        </ul>
+      </header>
+      <section>
+        <h2>Przelicznik jednostek</h2>
+        <div class="converter">
+          <input type="number" min="0" value="0" class="converter__leftInput" />
+          <img src="./assets/images/transfer.svg" class="converter__transfer" />
+          <input
+            type="number"
+            min="0"
+            value="0"
+            class="converter__rightInput"
+          />
+          <p class="converter__info">Wybierz potrzebne jednostki:</p>
+          <select class="converter__leftSelect">
+            <option value="">Wybierz jednostkę</option>
+          </select>
+          <select class="converter__rightSelect">
+            <option value="">Wybierz jednostkę</option>
+          </select>
+        </div>
+        <div class="typeSelection">
+          <div id="length">
+            Długość
+            <img src="./assets/images/distance.svg" alt="distance icon" />
+          </div>
+          <div id="temperature">
+            Temperatura
+            <img src="./assets/images/temperature.svg" alt="temperature icon" />
+          </div>
+          <div id="weight">
+            Waga
+            <img src="./assets/images/weight.svg" alt="weight icon" />
+          </div>
+          <div id="speed">
+            Szybkość
+            <img src="./assets/images/speed.svg" alt="speed icon" />
+          </div>
+          <div id="bytes">
+            Bity i Bajty
+            <img src="./assets/images/bytes.svg" alt="bytes icon" />
+          </div>
+          <div id="volume">
+            Objętość
+            <img src="./assets/images/volume.svg" alt="volume icon" />
+          </div>
+          <div id="area">
+            Powierzchnia
+            <img src="./assets/images/area.svg" alt="area icon" />
+          </div>
+          <div id="time">
+            Czas
+            <img src="./assets/images/time.svg" alt="time icon" />
+          </div>
+          <div id="force">
+            Moc
+            <img src="./assets/images/force.svg" alt="force icon" />
+          </div>
+          <div id="frequency">
+            Częstotliwość
+            <img src="./assets/images/frequency.svg" alt="frequency icon" />
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
